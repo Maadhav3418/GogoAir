@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Default test</title>
+<title>TestNG:  Amazon Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
+<h2 align='center'>Amazon Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 30 05:02:01 IST 2019</td>
+<td>Started on:</td><td>Fri Aug 30 05:04:38 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34388 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28559 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.amazon.qa.testcases.AmazonHomePageTest.getTitle()'><b>getTitle</b><br>Test class: com.amazon.qa.testcases.AmazonHomePageTest</td>
+<td title='com.amazon.qa.testcases.BooksContentPageTest.getLink()'><b>getLink</b><br>Test class: com.amazon.qa.testcases.BooksContentPageTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.amazon.qa.testcases.AmazonHomePageTest.getTitle(AmazonHomePageTest.java:106)
+	at com.amazon.qa.testcases.BooksContentPageTest.getLink(BooksContentPageTest.java:38)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1492875057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1492875057'><pre>java.lang.NullPointerException
+	at com.amazon.qa.testcases.BooksContentPageTest.getLink(BooksContentPageTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,8 +106,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace565839681", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace565839681'><pre>java.lang.NullPointerException
+</pre></div></td>
+<td>0</td>
+<td>com.amazon.qa.testcases.BooksContentPageTest@5f2108b5</td></tr>
+<tr>
+<td title='com.amazon.qa.testcases.AmazonHomePageTest.getTitle()'><b>getTitle</b><br>Test class: com.amazon.qa.testcases.AmazonHomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.amazon.qa.testcases.AmazonHomePageTest.getTitle(AmazonHomePageTest.java:106)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24293395", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24293395'><pre>java.lang.NullPointerException
 	at com.amazon.qa.testcases.AmazonHomePageTest.getTitle(AmazonHomePageTest.java:106)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -133,7 +143,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.amazon.qa.testcases.AmazonHomePageTest@5bcab519</td></tr>
+<td>com.amazon.qa.testcases.AmazonHomePageTest@e45f292</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -145,18 +155,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.amazon.qa.testcases.AmazonHomePageTest.AllOptions()'><b>AllOptions</b><br>Test class: com.amazon.qa.testcases.AmazonHomePageTest</td>
 <td></td>
-<td>2</td>
-<td>com.amazon.qa.testcases.AmazonHomePageTest@5bcab519</td></tr>
+<td>1</td>
+<td>com.amazon.qa.testcases.AmazonHomePageTest@e45f292</td></tr>
 <tr>
 <td title='com.amazon.qa.testcases.AmazonHomePageTest.EnterData1()'><b>EnterData1</b><br>Test class: com.amazon.qa.testcases.AmazonHomePageTest</td>
 <td></td>
-<td>12</td>
-<td>com.amazon.qa.testcases.AmazonHomePageTest@5bcab519</td></tr>
+<td>11</td>
+<td>com.amazon.qa.testcases.AmazonHomePageTest@e45f292</td></tr>
 <tr>
 <td title='com.amazon.qa.testcases.AmazonHomePageTest.SelectBooks()'><b>SelectBooks</b><br>Test class: com.amazon.qa.testcases.AmazonHomePageTest</td>
 <td></td>
 <td>1</td>
-<td>com.amazon.qa.testcases.AmazonHomePageTest@5bcab519</td></tr>
+<td>com.amazon.qa.testcases.AmazonHomePageTest@e45f292</td></tr>
 </table><p>
 </body>
 </html>

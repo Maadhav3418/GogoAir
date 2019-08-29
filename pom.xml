@@ -3,6 +3,29 @@
   <groupId>Gogoair</groupId>
   <artifactId>Gogoair</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.18.1</version>
+        <configuration>
+          <forkCount>0</forkCount>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+      </build>
   <dependencies>
   <dependency>
 <groupId>org.seleniumhq.selenium</groupId>
@@ -31,10 +54,11 @@
     <artifactId>extentreports</artifactId>
     <version>4.0.9</version>
 </dependency>
+
 <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>3.8.0</version>
- </dependency>
+		    <groupId>com.relevantcodes</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>2.41.2</version>
+		</dependency>
 </dependencies>
 </project>

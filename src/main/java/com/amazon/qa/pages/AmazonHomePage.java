@@ -12,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.amazon.qa.base.TestBase;
 
 public class AmazonHomePage extends TestBase {
-
+public static TestBase base;
 	String element;
 	BooksContentPage booksContentPage;
 	
@@ -36,9 +36,10 @@ public class AmazonHomePage extends TestBase {
 	}
 	
 	//Actions
-	public String validatePageTitle()
+	public void validatePageTitle()
 	{
-		return driver.getTitle();
+		base=new TestBase();
+		base.title();
 	
 	}
 	
@@ -76,5 +77,7 @@ public class AmazonHomePage extends TestBase {
 		return null ;
 
 	}
+	
+	
 	
 }

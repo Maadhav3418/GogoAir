@@ -1,11 +1,9 @@
 package com.amazon.qa.base;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -62,6 +60,16 @@ public static void initialization(String browserName) throws InterruptedExceptio
 	driver.manage().window().maximize();
 	Thread.sleep(2000);
 	
+	}
+	public void title() {
+		String t=driver.getTitle();
+		System.out.println(t);
+		
+	}
+//quits browser
+	public static void quit()
+	{
+		driver.quit();
 	}
 
 }

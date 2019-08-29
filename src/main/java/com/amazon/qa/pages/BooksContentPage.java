@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,10 +15,14 @@ import com.amazon.qa.base.TestBase;
 public class BooksContentPage extends TestBase {
 	String arry;
 	ArrayList<String> arr;
-	@FindBy(xpath ="(//span[starts-with(@class,'a-size-medium a-color-base a-text-normal')])[1]")
+	//public static WebDriver driver;
+	public static BooksContentPage page;
+	
+	//PageFactory or Object Repository 
+	
+	@FindBy(css ="#search > div.sg-row > div.sg-col-20-of-24.sg-col-28-of-32.sg-col-16-of-20.sg-col.s-right-column.sg-col-32-of-36.sg-col-8-of-12.sg-col-12-of-16.sg-col-24-of-28 > div > span:nth-child(4) > div.s-result-list.s-search-results.sg-row > div:nth-child(1) > div > div > div > div:nth-child(2) > div.sg-col-4-of-12.sg-col-8-of-16.sg-col-16-of-24.sg-col-12-of-20.sg-col-24-of-32.sg-col.sg-col-28-of-36.sg-col-20-of-28 > div > div:nth-child(1) > div > div > div:nth-child(1) > h2 > a")
 	WebElement   FistBook;
-	
-	
+		
 	
 	// To initialize the all the current page factory objects
 	
@@ -27,7 +32,6 @@ public class BooksContentPage extends TestBase {
 
 	
 	//Actions
-	
 	
 	public String BooksContentPages()
 		{
